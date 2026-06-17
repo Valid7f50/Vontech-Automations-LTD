@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VONTECH AUTOMATION LTD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo"><span>VON</span>TECH <em>.</em></div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#booking">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#booking" class="btn-primary">Book a Meeting</a>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#services"     onclick="closeMobile()">Services</a>
+    <a href="#gallery"      onclick="closeMobile()">Gallery</a>
+    <a href="#testimonials" onclick="closeMobile()">Testimonials</a>
+    <a href="#internship"   onclick="closeMobile()">Internship</a>
+    <a href="#booking"      onclick="closeMobile()">Book a Meeting</a>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <svg id="circuit-canvas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice"></svg>
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-eyebrow">Embedded Systems · Industrial Automation · CAD</p>
+          <h1 class="hero-title">
+            Engineering<br/>
+            <span class="line-accent">Smarter</span><br/>
+            <span class="line-amber">Solutions.</span>
+          </h1>
+          <p class="hero-desc">
+            From microcontrollers to full industrial automation pipelines and precision CAD designs — VonTech Automation brings your engineering projects to life with expert hands-on execution.
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn-primary">Explore Services ›</a>
+            <a href="#booking"  class="btn-amber">Book a Consultation</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num">50<span>+</span></div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div>
+              <div class="stat-num">3<span>+</span></div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div>
+              <div class="stat-num">100<span>%</span></div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="tech-card">
+            <div class="tc-label">Active Systems</div>
+            <div class="tc-modules">
+              <div class="tc-module">
+                <div class="tc-icon ic-blue">🔌</div>
+                <div>
+                  <div class="tc-module-name">Embedded Control</div>
+                  <div class="tc-module-meta">ARM · AVR · ESP32</div>
+                </div>
+                <div class="tc-pulse"></div>
+              </div>
+              <div class="tc-module">
+                <div class="tc-icon ic-amber">⚙️</div>
+                <div>
+                  <div class="tc-module-name">Industrial PLC</div>
+                  <div class="tc-module-meta">SCADA · HMI · Ladder</div>
+                </div>
+                <div class="tc-pulse" style="animation-delay:0.6s"></div>
+              </div>
+              <div class="tc-module">
+                <div class="tc-icon ic-green">📐</div>
+                <div>
+                  <div class="tc-module-name">CAD Design</div>
+                  <div class="tc-module-meta">2D · 3D · PCB Layout</div>
+                </div>
+                <div class="tc-pulse" style="animation-delay:1.2s"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ───────────────────────────────────────── -->
+  <section id="services">
+    <div class="container">
+      <div class="badge">What We Do</div>
+      <h2 class="section-title">End-to-End Engineering Services</h2>
+      <p class="section-sub">Whether you're building your first prototype or scaling up industrial operations, VonTech handles the full engineering lifecycle.</p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="svc-icon">🔬</div>
+          <div class="svc-title">Embedded Systems Development</div>
+          <p class="svc-desc">Custom firmware, sensor integration, real-time operating systems, and microcontroller programming tailored to your application requirements.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Arduino</span>
+            <span class="svc-tag">Raspberry Pi</span>
+            <span class="svc-tag">ESP32</span>
+            <span class="svc-tag">STM32</span>
+            <span class="svc-tag">FreeRTOS</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="svc-icon">🏭</div>
+          <div class="svc-title">Industrial Automation</div>
+          <p class="svc-desc">Comprehensive automation solutions — from PLC programming and SCADA systems to conveyor design, motor drives, and process control integration.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">PLC</span>
+            <span class="svc-tag">SCADA</span>
+            <span class="svc-tag">HMI</span>
+            <span class="svc-tag">VFD</span>
+            <span class="svc-tag">Robotics</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="svc-icon">📐</div>
+          <div class="svc-title">CAD & Mechanical Design</div>
+          <p class="svc-desc">Precision 2D drafting, 3D solid modelling, PCB layout, and enclosure design for prototypes and production-ready engineering parts.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">SolidWorks</span>
+            <span class="svc-tag">AutoCAD</span>
+            <span class="svc-tag">KiCad</span>
+            <span class="svc-tag">Fusion 360</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="svc-icon">🧪</div>
+          <div class="svc-title">Prototyping & Testing</div>
+          <p class="svc-desc">Rapid prototyping from concept to functional unit — with circuit testing, simulation, and iteration before full deployment.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Prototyping</span>
+            <span class="svc-tag">Testing</span>
+            <span class="svc-tag">Simulation</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="svc-icon">🔧</div>
+          <div class="svc-title">Maintenance & Support</div>
+          <p class="svc-desc">Post-deployment support, predictive maintenance planning, troubleshooting, and system upgrades to keep your automation running at peak.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Maintenance</span>
+            <span class="svc-tag">Upgrades</span>
+            <span class="svc-tag">Support</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="svc-icon">🎓</div>
+          <div class="svc-title">Training & Internship</div>
+          <p class="svc-desc">Hands-on internship programs for students and young engineers wanting to gain practical skills in embedded systems, automation, and CAD.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Hands-on</span>
+            <span class="svc-tag">Mentorship</span>
+            <span class="svc-tag">Students</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY VONTECH ────────────────────────────────────── -->
+  <section id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div>
+          <div class="badge">Why Choose Us</div>
+          <h2 class="section-title">Precision, Experience & Real Results</h2>
+          <p class="section-sub" style="margin-bottom:36px;">VonTech isn't just a service — it's a partnership built on technical expertise, honest communication, and a genuine passion for engineering.</p>
+          <div class="why-list">
+            <div class="why-item reveal">
+              <div class="why-num">01</div>
+              <div>
+                <div class="why-text-title">Deep Technical Expertise</div>
+                <p class="why-text-body">Years of hands-on experience across embedded firmware, industrial control systems, and precision CAD — no guesswork, only proven methods.</p>
+              </div>
+            </div>
+            <div class="why-item reveal reveal-delay-1">
+              <div class="why-num">02</div>
+              <div>
+                <div class="why-text-title">Personalised Attention</div>
+                <p class="why-text-body">As a specialist firm, every client gets direct access to the lead engineer. Your project is never handed off to someone who doesn't understand it.</p>
+              </div>
+            </div>
+            <div class="why-item reveal reveal-delay-2">
+              <div class="why-num">03</div>
+              <div>
+                <div class="why-text-title">End-to-End Delivery</div>
+                <p class="why-text-body">From concept sketches to working prototypes to final deployment — VonTech stays with your project through every stage and beyond.</p>
+              </div>
+            </div>
+            <div class="why-item reveal reveal-delay-3">
+              <div class="why-num">04</div>
+              <div>
+                <div class="why-text-title">Knowledge Transfer</div>
+                <p class="why-text-body">We build systems you understand. Documentation, training, and walkthrough sessions ensure your team can operate and maintain what we build.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="highlight-box">
+            <div class="tc-label" style="margin-bottom:8px;">Project Success Rate</div>
+            <div class="hb-number">98<span>%</span></div>
+            <div class="hb-label">On-time, on-spec delivery rate across all projects</div>
+            <div class="hb-divider"></div>
+            <div class="hb-stat"><span class="hb-stat-key">Embedded Projects</span><span class="hb-stat-val">20+</span></div>
+            <div class="hb-stat"><span class="hb-stat-key">Automation Systems</span><span class="hb-stat-val">15+</span></div>
+            <div class="hb-stat"><span class="hb-stat-key">CAD Designs</span><span class="hb-stat-val">30+</span></div>
+            <div class="hb-stat"><span class="hb-stat-key">Students Trained</span><span class="hb-stat-val">40+</span></div>
+            <div class="hb-divider"></div>
+            <a href="#booking" class="btn-primary" style="width:100%;justify-content:center;">Start Your Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ────────────────────────────────────────── -->
+  <section id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <div class="badge">Our Work</div>
+        <h2 class="section-title">Project Gallery</h2>
+        <p class="section-sub">A glimpse at the real-world systems, devices, and designs we've engineered for clients across industries.</p>
+      </div>
+      <div class="carousel-wrap reveal">
+        <div class="carousel-track" id="carousel-track">
+
+          <div class="carousel-slide">
+            <div class="slide-ph slide-ph-1">
+              <div class="ph-icon">🔌</div>
+              <div class="ph-title">Custom Motor Control Board</div>
+              <div class="ph-sub">Add your project image here</div>
+            </div>
+            <div class="slide-overlay">
+              <div class="slide-tag">Embedded Systems</div>
+              <div class="slide-title">Custom Motor Control Board</div>
+              <div class="slide-desc">STM32-based closed-loop DC motor controller with PWM drive and encoder feedback</div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-ph slide-ph-2">
+              <div class="ph-icon">🏭</div>
+              <div class="ph-title">Conveyor Automation System</div>
+              <div class="ph-sub">Add your project image here</div>
+            </div>
+            <div class="slide-overlay">
+              <div class="slide-tag">Industrial Automation</div>
+              <div class="slide-title">Conveyor Automation System</div>
+              <div class="slide-desc">PLC-controlled multi-stage conveyor with sensor array and HMI monitoring panel</div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-ph slide-ph-3">
+              <div class="ph-icon">📐</div>
+              <div class="ph-title">Enclosure 3D CAD Model</div>
+              <div class="ph-sub">Add your project image here</div>
+            </div>
+            <div class="slide-overlay">
+              <div class="slide-tag">CAD Design</div>
+              <div class="slide-title">Industrial Enclosure Design</div>
+              <div class="slide-desc">Full 3D model with IP65 sealing, DIN rail mounting, and cable management designed in SolidWorks</div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-ph slide-ph-4">
+              <div class="ph-icon">📡</div>
+              <div class="ph-title">IoT Sensor Gateway</div>
+              <div class="ph-sub">Add your project image here</div>
+            </div>
+            <div class="slide-overlay">
+              <div class="slide-tag">Embedded Systems · IoT</div>
+              <div class="slide-title">IoT Sensor Gateway</div>
+              <div class="slide-desc">ESP32 multi-sensor node with MQTT reporting, OTA updates, and solar power harvesting</div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-ph slide-ph-5">
+              <div class="ph-icon">⚡</div>
+              <div class="ph-title">Power Distribution PCB</div>
+              <div class="ph-sub">Add your project image here</div>
+            </div>
+            <div class="slide-overlay">
+              <div class="slide-tag">PCB Design</div>
+              <div class="slide-title">Multi-Rail Power Distribution PCB</div>
+              <div class="slide-desc">4-layer board with 5V/12V/24V rails, overcurrent protection, and status LEDs — designed in KiCad</div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-btn prev" id="prev-btn" aria-label="Previous slide">‹</button>
+        <button class="carousel-btn next" id="next-btn" aria-label="Next slide">›</button>
+      </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ───────────────────────────────────── -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="badge">Testimonials</div>
+      <h2 class="section-title">What Our Students & Clients Say</h2>
+      <p class="section-sub">Real words from real people who've worked with VonTech — whether as clients or as interns who came to learn.</p>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Working with VonTech was a turning point for our factory floor. The PLC system installed reduced our downtime by over 60%. The communication was clear and the delivery was flawless.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AO</div>
+            <div>
+              <div class="testi-stars">★★★★★</div>
+              <div class="testi-name">Adewale Okonkwo</div>
+              <div class="testi-role">Production Manager, ManufactCo Ltd</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">I came in knowing almost nothing about embedded systems. After my internship at VonTech, I left with real skills and actual projects I could show at job interviews. Completely worth it.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">CN</div>
+            <div>
+              <div class="testi-stars">★★★★★</div>
+              <div class="testi-name">Chisom Nwosu</div>
+              <div class="testi-role">Intern Alumnus · Now Systems Engineer</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The CAD work produced for our housing project was incredibly detailed. Dimensions were spot-on, tolerances respected. It saved us two weeks of rework on the shopfloor.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">TI</div>
+            <div>
+              <div class="testi-stars">★★★★★</div>
+              <div class="testi-name">Tunde Ibrahim</div>
+              <div class="testi-role">Technical Director, BuildTech Engineering</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The hands-on mentorship style is unlike any tutorial or course online. You actually build things, you actually troubleshoot things. That's how you really learn engineering.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">FK</div>
+            <div>
+              <div class="testi-stars">★★★★★</div>
+              <div class="testi-name">Fatima Kabir</div>
+              <div class="testi-role">Intern Alumna · Final Year Engineering Student</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">We needed an IoT monitoring system for our pumping station quickly. VonTech delivered a working prototype in under two weeks. Fast, professional, and very capable team.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">EM</div>
+            <div>
+              <div class="testi-stars">★★★★★</div>
+              <div class="testi-name">Emeka Madu</div>
+              <div class="testi-role">Facilities Manager, AquaFlow Ltd</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">I always recommend VonTech to anyone starting out in tech who wants real industrial exposure. The learning environment is demanding but incredibly rewarding — you leave a different engineer.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">BO</div>
+            <div>
+              <div class="testi-stars">★★★★★</div>
+              <div class="testi-name">Blessing Oke</div>
+              <div class="testi-role">Intern Alumna · Junior Automation Engineer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INTERNSHIP ─────────────────────────────────────── -->
+  <section id="internship">
+    <div class="container">
+      <div class="badge">Learn With Us</div>
+      <h2 class="section-title">Internship Programme</h2>
+      <p class="section-sub">Get real, industry-grade skills — not just theory. Join VonTech's hands-on internship and build things that matter.</p>
+      <div class="intern-grid">
+        <div>
+          <div class="intern-steps">
+            <div class="intern-step reveal">
+              <div class="is-dot">1</div>
+              <div>
+                <div class="is-title">Apply & Get Onboarded</div>
+                <p class="is-body">Submit your interest through the booking form below. You'll be contacted to discuss your background, goals, and available dates for the programme.</p>
+              </div>
+            </div>
+            <div class="intern-step reveal reveal-delay-1">
+              <div class="is-dot">2</div>
+              <div>
+                <div class="is-title">Foundations Week</div>
+                <p class="is-body">Start with core concepts in electronics, microcontrollers, CAD tools, and industrial automation fundamentals — building real circuits from day one.</p>
+              </div>
+            </div>
+            <div class="intern-step reveal reveal-delay-2">
+              <div class="is-dot">3</div>
+              <div>
+                <div class="is-title">Hands-On Project Work</div>
+                <p class="is-body">Work on actual VonTech client-style projects under direct mentorship. You'll design, build, test, and debug full systems — not just watch demos.</p>
+              </div>
+            </div>
+            <div class="intern-step reveal reveal-delay-3">
+              <div class="is-dot">4</div>
+              <div>
+                <div class="is-title">Certificate & Portfolio</div>
+                <p class="is-body">Complete the programme with a certificate of participation and a portfolio of real projects you built — ready to show employers or clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="intern-cta-card">
+            <div class="badge">Token Fee</div>
+            <div class="ic-price">₦ Token</div>
+            <div class="ic-price-note">Affordable access fee — contact us for current rates</div>
+            <ul class="ic-features">
+              <li>Embedded Systems (Microcontrollers, Firmware)</li>
+              <li>Industrial Automation (PLC, SCADA, HMI)</li>
+              <li>CAD & PCB Design Fundamentals</li>
+              <li>Real project-based learning</li>
+              <li>Direct mentorship from the lead engineer</li>
+              <li>Certificate of Completion</li>
+              <li>Flexible scheduling available</li>
+            </ul>
+            <a href="#booking" class="btn-amber" style="width:100%;justify-content:center;">Apply for Internship</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOOKING ────────────────────────────────────────── -->
+  <section id="booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info">
+          <div class="badge">Get In Touch</div>
+          <h2 class="section-title">Book a Meeting with the Founder</h2>
+          <p class="section-sub" style="margin-bottom:36px;">Whether you have a project in mind, need a quote, or want to explore the internship — reach out directly and we'll get back to you promptly.</p>
+          <div class="bi-feature">
+            <div class="bi-icon">📍</div>
+            <div>
+              <div class="bi-title">Location</div>
+              <p class="bi-body">Nigeria — available for on-site visits and remote consultations</p>
+            </div>
+          </div>
+          <div class="bi-feature">
+            <div class="bi-icon">📞</div>
+            <div>
+              <div class="bi-title">Phone / WhatsApp</div>
+              <p class="bi-body">Add your phone number here</p>
+            </div>
+          </div>
+          <div class="bi-feature">
+            <div class="bi-icon">📧</div>
+            <div>
+              <div class="bi-title">Email</div>
+              <p class="bi-body">Add your email address here</p>
+            </div>
+          </div>
+          <div class="bi-feature">
+            <div class="bi-icon">⏰</div>
+            <div>
+              <div class="bi-title">Response Time</div>
+              <p class="bi-body">We typically respond within 24 hours on business days</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="booking-form">
+            <div class="form-title">Appointment Request Form</div>
+            <form id="appointment-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="fname" placeholder="e.g. Adewale" required />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lname" placeholder="e.g. Okonkwo" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" />
+              </div>
+              <div class="form-group">
+                <label for="purpose">Purpose of Meeting</label>
+                <select id="purpose" name="purpose" required>
+                  <option value="" disabled selected>Select a reason</option>
+                  <option value="project">Discuss a Project / Commission Work</option>
+                  <option value="quote">Request a Quote</option>
+                  <option value="internship">Internship Enquiry</option>
+                  <option value="consultation">General Technical Consultation</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="preferred-date">Preferred Date</label>
+                <input type="date" id="preferred-date" name="preferred-date" />
+              </div>
+              <div class="form-group">
+                <label for="message">Tell Us About Your Project / Request</label>
+                <textarea id="message" name="message" placeholder="Briefly describe what you need help with, your timeline, and any relevant details..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary form-submit">Send Appointment Request ›</button>
+              <p class="form-note">Your information is kept confidential and never shared.</p>
+            </form>
+            <div id="form-success">
+              ✓ &nbsp; Your request has been sent! We'll be in touch within 24 hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><span>VON</span>TECH <em>.</em></div>
+          <p>Embedded systems, industrial automation, and CAD solutions — engineered with precision, delivered with care.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Embedded Systems</a></li>
+            <li><a href="#services">Industrial Automation</a></li>
+            <li><a href="#services">CAD Design</a></li>
+            <li><a href="#services">Prototyping</a></li>
+            <li><a href="#services">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">Why VonTech</a></li>
+            <li><a href="#gallery">Project Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#booking">Book a Meeting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="fc-icon">📍</span>
+            <span class="fc-text">Nigeria</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="fc-icon">📧</span>
+            <span class="fc-text">your@email.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="fc-icon">📞</span>
+            <span class="fc-text">+234 800 000 0000</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span>VonTech Automation Ltd</span>. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">W</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
