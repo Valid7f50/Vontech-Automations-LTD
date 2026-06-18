@@ -118,26 +118,7 @@
       els.forEach(el => observer.observe(el));
     })();
 
-    /* ── FORM SUBMISSION ────────────────────────────────── */
-    document.getElementById('appointment-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      // Basic validation
-      const required = this.querySelectorAll('[required]');
-      let valid = true;
-      required.forEach(f => {
-        f.style.borderColor = '';
-        if (!f.value.trim()) {
-          f.style.borderColor = '#FF4D4D';
-          valid = false;
-        }
-      });
-      if (!valid) return;
-
-      // Show success (you'll wire this up to your email backend / Formspree / EmailJS)
-      this.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
-    });
-
+    
     /* ── SET MIN DATE ON DATE INPUT ─────────────────────── */
     const dateInput = document.getElementById('preferred-date');
     if (dateInput) {

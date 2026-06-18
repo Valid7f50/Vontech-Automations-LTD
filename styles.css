@@ -782,3 +782,125 @@ footer {
   .highlight-box { padding: 28px 20px; }
   .hb-number { font-size: 52px; }
 }
+
+/* Formspree success banner */
+.fs-success-msg {
+  background: rgba(56, 200, 120, 0.1);
+  border: 1px solid rgba(56, 200, 120, 0.35);
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #38C878;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formspree top-level error banner */
+.fs-error-msg {
+  background: rgba(255, 77, 77, 0.1);
+  border: 1px solid rgba(255, 77, 77, 0.35);
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #FF4D4D;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formspree per-field error text */
+.fs-field-error {
+  display: block;
+  font-size: 12px;
+  color: #FF4D4D;
+  margin-top: 5px;
+  min-height: 16px;
+}
+
+/* Highlight invalid fields (set by Formspree via aria-invalid) */
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: #FF4D4D !important;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.12) !important;
+}
+
+/* Disable submit button while sending */
+button[data-fs-submit-btn]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ── PASTE THESE AT THE BOTTOM OF YOUR styles.css ──────── */
+
+/* ── ABOUT ────────────────────────────────────────────── */
+#about { background: var(--navy2); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-text { padding-top: 6px; }
+
+.about-body {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.about-card:hover {
+  transform: translateX(6px);
+  border-color: rgba(30, 111, 255, 0.4);
+}
+
+.ac-icon {
+  font-size: 22px;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: rgba(30, 111, 255, 0.08);
+  border: 1px solid rgba(30, 111, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ac-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+
+.ac-body {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+}

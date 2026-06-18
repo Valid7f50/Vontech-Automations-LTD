@@ -17,7 +17,8 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#internship">Internship</a></li>
+        <li><a href="#internship">Carrer</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#booking">Contact</a></li>
       </ul>
       <div class="nav-cta">
@@ -466,6 +467,68 @@
     </div>
   </section>
 
+  <!-- ── ABOUT ─────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: Story -->
+        <div class="about-text">
+          <div class="badge">Our Story</div>
+          <h2 class="section-title">Built From Curiosity.<br/>Driven By Purpose.</h2>
+          <p class="about-body">
+            VonTech didn't start in a boardroom. It started with a young engineer who refused to wait for permission to learn. Armed with curiosity, determination, and a hands-on approach to solving real problems, the foundation of what would become VonTech Automation was laid one circuit, one line of code, and one project at a time.
+          </p>
+          <p class="about-body">
+            What began as a personal journey into embedded systems and industrial automation grew into something bigger, a mission to make world-class engineering knowledge accessible to the next generation of Nigerian engineers. Because the founder learned by doing, every student and every client at VonTech gets that same philosophy: no shortcuts, no theory without practice, just real engineering.
+          </p>
+          <p class="about-body">
+            Today, VonTech operates from Port Harcourt, delivering embedded systems, automation, and CAD solutions to businesses while simultaneously training students who go on to build careers and companies of their own.
+          </p>
+          <a href="#booking" class="btn-primary" style="margin-top:12px;">Work With Us ›</a>
+        </div>
+
+        <!-- Right: Values cards -->
+        <div class="about-cards">
+
+          <div class="about-card">
+            <div class="ac-icon">🌱</div>
+            <div>
+              <div class="ac-title">Born From the Ground Up</div>
+              <p class="ac-body">VonTech was built without shortcuts — self-taught, self-driven, and grounded in the belief that mastery comes from doing, not watching.</p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="ac-icon">🎯</div>
+            <div>
+              <div class="ac-title">Mission-Driven</div>
+              <p class="ac-body">Our core purpose is clear: equip the next generation of engineers with practical skills that translate directly into industry-ready capability.</p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="ac-icon">🤝</div>
+            <div>
+              <div class="ac-title">Community Over Competition</div>
+              <p class="ac-body">Every intern who trains here joins a growing network of engineers who came up the same way — hands dirty, minds sharp, ready to build.</p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="ac-icon">🏗️</div>
+            <div>
+              <div class="ac-title">Real Work, Real Impact</div>
+              <p class="ac-body">From factory floors to student portfolios, the work done at VonTech creates tangible outcomes, systems that run, projects that ship, careers that launch.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ── BOOKING ────────────────────────────────────────── -->
   <section id="booking">
     <div class="container">
@@ -492,7 +555,7 @@
             <div class="bi-icon">📧</div>
             <div>
               <div class="bi-title">Email</div>
-              <p class="bi-body"><!--Find Sir's email address--></p>
+              <p class="bi-body">samuelchikwendu27@gmail.com</p>
             </div>
           </div>
           <div class="bi-feature">
@@ -507,28 +570,71 @@
         <div>
           <div class="booking-form">
             <div class="form-title">Appointment Request Form</div>
+
+            <!-- Formspree success message (hidden until submission) -->
+            <div data-fs-success class="fs-success-msg">
+              ✓ &nbsp; Your request has been sent! We'll be in touch within 24 hours.
+            </div>
+
+            <!-- Formspree top-level error message (e.g. network failure) -->
+            <div data-fs-error class="fs-error-msg" style="display:none;"></div>
+
             <form id="appointment-form" novalidate>
+
               <div class="form-row">
                 <div class="form-group">
                   <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="fname" placeholder="e.g. Adewale" required />
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="e.g. Adewale"
+                    required
+                    data-fs-field
+                  />
+                  <span class="fs-field-error" data-fs-error="fname"></span>
                 </div>
                 <div class="form-group">
                   <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lname" placeholder="e.g. Okonkwo" required />
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="e.g. Okonkwo"
+                    required
+                    data-fs-field
+                  />
+                  <span class="fs-field-error" data-fs-error="lname"></span>
                 </div>
               </div>
+
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  data-fs-field
+                />
+                <span class="fs-field-error" data-fs-error="email"></span>
               </div>
+
               <div class="form-group">
                 <label for="phone">Phone / WhatsApp</label>
-                <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+234 800 000 0000"
+                  data-fs-field
+                />
               </div>
+
               <div class="form-group">
                 <label for="purpose">Purpose of Meeting</label>
-                <select id="purpose" name="purpose" required>
+                <select id="purpose" name="purpose" required data-fs-field>
                   <option value="" disabled selected>Select a reason</option>
                   <option value="project">Discuss a Project / Commission Work</option>
                   <option value="quote">Request a Quote</option>
@@ -536,23 +642,40 @@
                   <option value="consultation">General Technical Consultation</option>
                   <option value="other">Other</option>
                 </select>
+                <span class="fs-field-error" data-fs-error="purpose"></span>
               </div>
+
               <div class="form-group">
                 <label for="preferred-date">Preferred Date</label>
-                <input type="date" id="preferred-date" name="preferred-date" />
+                <input
+                  type="date"
+                  id="preferred-date"
+                  name="preferred_date"
+                  data-fs-field
+                />
               </div>
+
               <div class="form-group">
                 <label for="message">Tell Us About Your Project / Request</label>
-                <textarea id="message" name="message" placeholder="Briefly describe what you need help with, your timeline, and any relevant details..." required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Briefly describe what you need help with, your timeline, and any relevant details..."
+                  required
+                  data-fs-field
+                ></textarea>
+                <span class="fs-field-error" data-fs-error="message"></span>
               </div>
-              <button type="submit" class="btn-primary form-submit">Send Appointment Request ›</button>
+
+              <button type="submit" class="btn-primary form-submit" data-fs-submit-btn>
+                Send Appointment Request ›
+              </button>
               <p class="form-note">Your information is kept confidential and never shared.</p>
+
             </form>
-            <div id="form-success">
-              ✓ &nbsp; Your request has been sent! We'll be in touch within 24 hours.
-            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -563,7 +686,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo"><span>VON</span>TECH <em>.</em></div>
-          <p>Embedded systems, industrial automation, and CAD solutions Engineered with precision, delivered with care.</p>
+          <p>Embedded systems, industrial automation, and CAD solutions. Engineered with precision, delivered with care.</p>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -592,7 +715,7 @@
           </div>
           <div class="footer-contact-item">
             <span class="fc-icon">📧</span>
-            <span class="fc-text">samuelchikwendu27@gmail.com<!--Get Sir's email--></span>
+            <span class="fc-text">samuelchikwendu27@gmail.com</span>
           </div>
           <div class="footer-contact-item">
             <span class="fc-icon">📞</span>
@@ -601,7 +724,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 <span>VonTech Automation Ltd</span>. All rights reserved.</p>
+        <p>© <span id="footer-year"></span> <span>VonTech Automation Ltd</span>. All rights reserved.</p>
         <div class="social-links">
           <a href="" class="social-link" aria-label="LinkedIn">in</a>
           <a href="" class="social-link" aria-label="Twitter">𝕏</a>
@@ -611,6 +734,20 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- ── FORMSPREE CDN (must come before script.js) ─────── -->
+  <script>
+    window.formspree = window.formspree || function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+    formspree('initForm', {
+      formElement: '#appointment-form',
+      formId: 'mlgkkvve'
+    });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+  <!-- ── YOUR SITE SCRIPTS ──────────────────────────────── -->
+  <script src="script.js" defer></script>
+
 </body>
 </html>
