@@ -125,3 +125,8 @@
       const today = new Date().toISOString().split('T')[0];
       dateInput.setAttribute('min', today);
     }
+
+    /*Request sent alert*/
+    function alertSuccess() {
+      alert("Your request has been sent! We'll be in touch within 24 hours.");
+    }
